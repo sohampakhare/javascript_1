@@ -1,0 +1,22 @@
+<script>
+
+    const rnum=Math.random();
+    let result;
+    let guess= 'heads';
+
+        if(rnum < 0.5){
+            result='heads';
+            console.log("heads");
+        }else{
+            result='tails';
+            console.log("tails");
+        }
+
+    if(result === guess){
+        
+        console.log("you win...!");
+    }else{
+       
+        console.log("you lose..!");
+    }
+</script>
