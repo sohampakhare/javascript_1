@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <button onclick=" 
+    console.log(`cart quenty : ${cartq}`)
+     ">
+        show quantity
+    </button>
+    <button onclick="updatecartq(1)">
+       add quantity
+    </button>
+       <button onclick=" updatecartq( 2)">
+       +2
+    </button>
+       <button onclick="updatecartq(3) ">
+     +3
+    </button>
+       <button onclick="updatecartq(4)">
+     +4
+    </button>
+       <button onclick=" updatecartq(5)">
+     +5
+    </button>
+
+      
+
+        <button onclick=" updatecartq(-1)">
+     remove
+    </button>
+     <button onclick=" updatecartq( -2)">
+       -2
+    </button>
+       <button onclick=" updatecartq(-3)">
+     -3
+    </button>
+     <button onclick="
+      cartq = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cartq}`);
+    ">Reset Cart</button>
+      
+
+    
+        <script>
+              let cartq=0;
+              function updatecartq( val){
+
+                if (cartq + val >10)
+              {
+                 alert('the cart is full');
+                 return;
+              }
+               if (cartq + val <0 )
+              {
+                 alert('Not enough items in the cart');
+                 return;
+              }
+            
+                  
+                   cartq+=val;
+                console.log(`Cart quantity: ${ cartq}`);
+              
+                
+              }
+        </script>
+       
+
+</body>
+</html>
