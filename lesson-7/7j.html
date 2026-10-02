@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculater</title>
+</head>
+<body>
+    <p>
+        <button 
+        onclick=" updatecal(1);;"
+        >
+            1
+        </button >
+            <button  onclick="updatecal(2);">
+            2
+        </button>
+            <button  onclick=" updatecal(3);">
+            3
+        </button>
+            <button  onclick=" updatecal('+');">
+            +
+        </button>
+            
+    </p>
+     <p>
+        <button 
+        onclick=" updatecal(4);"
+        >
+            4
+        </button >
+            <button  onclick=" updatecal(5);">
+            5
+        </button>
+            <button  onclick=" updatecal(6);">
+            6
+        </button>
+            <button  onclick=" updatecal('-');">
+            -
+        </button>
+         
+    </p>
+
+      <p>
+        <button 
+        onclick="updatecal(7);"
+        >
+            7
+        </button >
+            <button  onclick=" updatecal(8);">
+            8
+        </button>
+            <button  onclick=" updatecal(9);">
+            9
+        </button>
+            <button  onclick="updatecal('*');">
+            *
+        </button>
+         
+    </p>
+      <p>
+        <button 
+        onclick="updatecal(0);"
+        >
+            0
+        </button >
+            <button  onclick=" updatecal('.');">
+            .
+        </button>
+            <button  onclick=" updatecal(0);">
+            /
+        </button>
+          
+         
+    </p>
+
+    <p>
+        <button  onclick="cal=eval(cal); console.log(cal)">
+            =
+        </button>
+
+        <button  onclick="cal=''; console.log('clered.')">
+            clere
+        </button>
+    </p>
+
+    <script>
+        let cal='';
+        function updatecal(val){
+            cal+=val;
+            console.log(cal)
+        }
+    </script>
+</body>
+</html>
